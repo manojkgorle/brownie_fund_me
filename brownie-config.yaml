@@ -9,6 +9,7 @@ compiler:
 dotenv : .env
 wallets: 
   from_key: ${PRIVATE_KEY}
+  kaledio_key: ${KALEDIO_KEY}
 
 
 #adding different address for different networks for interaction
@@ -30,3 +31,12 @@ networks:
   mainnet-fork-dev:
     eth_usd_price_feed : "0x5f4ec3df9cbd43714fe2740f5e3616155c5b8419"
     verify: False
+  test-kaledio:
+    eth_usd_price_feed: null
+    verify: False
+  mykaleidonetwork:
+    gas_limit: 10000000
+    gas_price: 0
+    host: https://k0kuxrwmm2-k0y7kp1vv3-rpc.kr0-aws.kaleido.io/
+    mnemonic: wedding impact borrow country drill chair myself pear physical latin actor pear
+    timeout: 300
